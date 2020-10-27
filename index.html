@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Horga Darius's Portofolio</title>
+	</head>
+	<body class="light">
+
+		<!-- !ICONS -->
+		<!-- <div class="sticky-top">
+			<button id="switch-small" class="switch"><i class="fas fa-toggle-off nav-switcher"></i></button>
+		</div> -->
+
+		<div class="sticky-top">
+			<button id="toggle" class="toggle">
+				<i class="fa fa-bars"></i>
+			</button>
+		</div>
+
+		<!-- <div>
+			<button id="back-up" class="toggle">
+				<i class="fas fa-chevron-circle-up fa-2x"></i>
+			</button>
+		</div> -->
+
+		<!-- !LOGO -->
+		<div class="container-fluid">
+			<div id="logo" class="d-flex justify-content-center pt-2">
+				<img src="img/logob.png" alt="Logo-Horga-Darius" />
+			</div>
+		</div>
+
+		<!-- !NAVBAR -->
+		<nav id="small-screen" class="sticky-top">
+			<div class="container-fluid sticky-top">
+				<div id="profile-picture">
+					<img  src="img/dh.jpg" alt="user"></img>
+				</div>
+				<ul>
+					<li><a href="#skills-banner">Skills</a></li>
+					<li><a href="#projects-banner">Projects</a></li>
+					<li><a href="#about-banner">About me</a></li>
+					<li><a href="#education-banner">Education</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- muier -->
+
+		<nav id="normal-screen" class="sticky-top">
+			<div class="container-fluid">
+				<div>
+					<ul id="nav-list" class="nav nav-pills justify-content-center">
+						<li class="nav-item">
+							<a href="#skills-banner" class="nav-link">Skills</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#projects-banner" class="nav-link">Projects</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#about-banner" class="nav-link">About me</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#education-banner" class="nav-link">Education</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- !BANNER -->
+		<section id="banner" class="light container-fluid">
+			<div id="banner-main" class="p-3">
+				<div id="banner-content" class="container">
+					<div id="banner-r-1"  class="row">
+						<div id="banner-pic" class="col-sm-12 col-md-6 text-center">
+							<img class="align-middle" src="img/dh.jpg" alt="">
+						</div>
+
+						<div id="banner-info" class="col-sm-12 col-md-6">
+							<h1 class="mt-5">Hello, my name is</h1>
+							<h1 id="name" class="my-3">Horga Darius</h1>
+							<h1 class="mb-5">I'm a Master's student and aspiring web developer</h1>
+							<a id="info-button" href="#skills-banner">Find more about me</a>
+						</div>
+					</div>
+
+					<div id="banner-r-2" class="row text-center ">
+						<div class="col-3">
+							<a href="resume/Darius's Resume.pdf" download=""><i class="fas fa-file-download pt-3 icon-change"></i></a>
+							<p class="lead mt-3">My Resume</p>
+						</div>
+						<div class="col-3">
+							<a href="https://github.com/dariushorga" target="_blank"><i class="fab fa-github-alt pt-3 icon-change"></i></a>
+							<p class="lead mt-3">GitHub Page</p>
+						</div>
+						<div class="col-3">
+							<a href="https://www.linkedin.com/in/darius-horga-0ab5591a0/" target="_blank"><i class="fab fa-linkedin pt-3 icon-change"></i></a>
+							<p class="lead mt-3">LinkedIn Profile</p>
+						</div>
+						<div class="col-3">
+							<a href = "mailto: dariushorga28@gmail.com"><i class="fas fa-envelope pt-3 icon-change"></i></a>
+							<p class="lead mt-3">My Email</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- !SKILLS -->
+		<section class="text-center light" id="skills-banner">
+			<h1>My skills</h1>
+			<img src="img/skills.png" alt="">
+		</section>
+
+		<section class="light" id="skillsSection">
+			<div class="container text-center">
+				<h2 class="skill-type">Front end technologies</h2>
+
+				<hr>
+
+				<div class="row">
+					<div class="mt-2 col-2 offset-1">
+						<i class="skill-icon devicon-javascript-plain"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-react-plain-wordmark"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-html5-plain-wordmark"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-css3-plain-wordmark"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-bootstrap-plain-wordmark"></i>
+					</div>
+				</div>
+
+
+				<h2 class="skill-type">Back end technologies</h2>
+
+				<hr>
+
+				<div class="row">
+					<div class="mt-2 col-2 offset-3">
+						<i class="skill-icon devicon-php-plain"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-nodejs-plain"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-express-original"></i>
+					</div>
+				</div>
+
+				<h2 class="skill-type">Database technologies</h2>
+
+				<hr>
+
+				<div class="row">
+					<div class="mt-2 col-2 offset-3">
+						<i class="skill-icon non-icon">json</i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-mysql-plain-wordmark"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-mongodb-plain-wordmark"></i>
+					</div>
+				</div>
+
+				<h2 class="skill-type">Other tools & technologies</h2>
+
+				<hr>
+
+				<div class="row pb-5">
+					<div class="mt-2 col-2 offset-1">
+						<i class="skill-icon devicon-git-plain-wordmark"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-python-plain-wordmark"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-illustrator-plain"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-apache-line-wordmark"></i>
+					</div>
+					<div class="mt-2 col-2">
+						<i class="skill-icon devicon-tomcat-line-wordmark"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- !ABOUT ME SECTION-->
+		<section class="text-center light" id="about-banner">
+			<h1>About me</h1>
+			<img src="img/about.png" alt="">
+		</section>
+
+
+		<section class="light text-center" id="aboutSection">
+			<div class="container">
+				<div class="row">
+					<div id="description" class="col-md-8 col-sm-12 offset-md-2 align-self-center">
+						<p class="lead">Hi, my name is Horga Darius. I am a Master's student and I am really enjoying web development. I am 22 years old and I currently live in Cluj-Napoca. My passion for web development started in the second year of my Bachelor's and it hasn't stopped since. I really enjoy using JavaScript and I try to use it in each of my projects. I am currently focuing on learning the MERN Stack (MongoDB, Express, React and Node.js). Outside of building websites and applications I love reading, traveling, listening to music, and watching sports.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- !EDUCATION -->
+		<section class="text-center light" id="education-banner">
+			<h1>Education</h1>
+			<img src="img/education.png" alt="">
+		</section>
+
+		<section class="light text-center" id="educationSection">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+							<div id="master">
+								<h2 class="ed-type">Master's degree</h2>
+								<h2 class="ed-major">Business Modelling & Distributed Computing</h2>
+								<p class="start-date">(Started 2020)</p>
+								<h4 class="uni">Babes-Bolyai University</h4>
+								<h4 class="faculty">Faculty of Economics and Business Administration</h4>
+							</div>
+
+							<hr>
+
+							<div id="bachelor">
+								<h3 class="ed-type">Bachelor's degree</h3>
+								<h2 class="ed-major">Business Informatics</h2>
+								<p class="start-date">(Finished 2020)</p>
+								<h4 class="uni">Babes-Bolyai University</h4>
+								<h4 class="faculty">Faculty of Economics and Business Administration</h4>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- !PROJECTS SECTION -->
+		<section class="text-center light" id="projects-banner">
+			<h1>My projects</h1>
+			<img src="img/projects.png" alt="">
+		</section>
+
+		<section class="light text-center" id="projectsSection">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<div class="card my-3">
+							<img class="card-img-top" src="img/carrental.png" alt="Card image cap">
+
+							<div class="card-body">
+								<h3 class="card-title">Car Rental Portal</h3>
+								<h6 class="card-subtitle mb-2 text-muted">JavaScript / jQuery / PHP / MySQL</h6>
+								<p class="card-text">My Bachelor's Degree project. Fullstack car rental project with users and admin pages</p>
+								<h6 class="disclaimer card-subtitle mb-4">*Project is <span>responsive only on large and medium screens</span>*</h6>
+								<a href="img/crp.mp4" target="_blank" class="card-link">Demo Video</a>
+								<a href="https://github.com/dariushorga/Car-Rental-Portal-A-platform-for-car-renting-" target="_blank" class="card-link">Github Repository</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4">
+						<div class="card my-3">
+							<img class="card-img-top" src="img/hangman.png" alt="Card image cap">
+
+							<div class="card-body">
+								<h3 class="card-title">Hangman</h3>
+								<h6 class="card-subtitle mb-2 text-muted">JavaScript / SVG</h6>
+								<p class="card-text">Hangman web application that takes keyboard input</p>
+								<h6 class="disclaimer card-subtitle mb-4">*Project is <span>responsive only on large and medium screens and works only with a keyboard</span>*</h6>
+								<a href="https://dariushorga.github.io/hangman-game/" target="_blank" class="card-link">Project page</a>
+								<a href="https://github.com/dariushorga/hangman-game" target="_blank" class="card-link">Github Repository</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4">
+						<div class="card my-3">
+							<img class="card-img-top" src="img/meal.png" alt="Card image cap">
+
+							<div class="card-body">
+								<h3 class="card-title">Meal Finder</h3>
+								<h6 class="card-subtitle mb-2 text-muted">JavaScript / JSON / MealDB API</h6>
+								<p class="card-text">Web application for searcing meals and meal recipes. All data is taken from MealDB</p>
+								<h6 class="disclaimer card-subtitle mb-4">*Project is <span>responsive only on large and medium screens</span>*</h6>
+								<a href="https://dariushorga.github.io/meal-finder-app/" target="_blank" class="card-link">Project page</a>
+								<a href="https://github.com/dariushorga/meal-finder-app" target="_blank" class="card-link">Github Repository</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4">
+						<div class="card my-3">
+							<img class="card-img-top" src="img/colorGame.png" alt="Card image cap">
+
+							<div class="card-body">
+								<h3 class="card-title">Color Guessing Game</h3>
+								<h6 class="card-subtitle mb-2 text-muted">JavaScript / HTML / CSS / Bootstarp</h6>
+								<p class="card-text">Color guessing game / web application made for exercising RGB color skills</p>
+								<h6 class="disclaimer card-subtitle mb-4">*Project is <span>responsive on all kinds of screens</span>*</h6>
+								<a href="https://dariushorga.github.io/Color-Guesser-Game/" target="_blank" class="card-link">Project page</a>
+								<a href="https://github.com/dariushorga/Color-Guesser-Game" target="_blank" class="card-link">Github Repository</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4">
+						<div class="card my-3">
+							<img class="card-img-top" src="img/omnifood.png" alt="Card image cap">
+
+							<div class="card-body">
+								<h3 class="card-title">Omnifood</h3>
+								<h6 class="card-subtitle mb-2 text-muted">Responsive CSS</h6>
+								<p class="card-text">Landing page for fictional online subscription-based food delivery business</p>
+								<h6 class="disclaimer card-subtitle mb-4">*Project is <span>responsive on all kinds of screens</span>*</h6>
+								<a href="https://dariushorga.github.io/omnifood-project/" target="_blank" class="card-link">Project page</a>
+								<a href="https://github.com/dariushorga/omnifood-project" target="_blank" class="card-link">Github Repository</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4">
+						<div class="card my-3">
+							<img class="card-img-top" src="img/candy.png" alt="Card image cap">
+
+							<div class="card-body">
+								<h3 class="card-title">Museum of candy</h3>
+								<h6 class="card-subtitle mb-2 text-muted">Bootstrap template</h6>
+								<p class="card-text">Template landing page for fictional candy museum</p>
+								<h6 class="disclaimer card-subtitle mb-4">*Project is <span>responsive on all kinds of screens</span>*</h6>
+								<a href="https://dariushorga.github.io/museumCandyTemp/" target="_blank" class="card-link">Project page</a>
+								<a href="https://github.com/dariushorga/museumCandyTemp" target="_blank" class="card-link">Github Repository</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- !FOOTER SECTION -->
+
+		<footer class="light text-center" id="footerSection">
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+						<a class="footerLinks" href="resume/Darius's Resume.pdf" download=""><i class="fas fa-file-download"></i></a>
+					</div>
+					<div class="col-3">
+						<a class="footerLinks" href="https://github.com/dariushorga" target="_blank"><i class="fab fa-github-alt"></i></a>
+					</div>
+					<div class="col-3">
+						<a class="footerLinks" href="https://www.linkedin.com/in/darius-horga-0ab5591a0/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					</div>
+					<div class="col-3">
+						<a class="footerLinks" href = "mailto: dariushorga28@gmail.com"><i class="fas fa-envelope"></i></a>
+					</div>
+				</div>
+				<div class="row">
+					<div id="oc" class="col-12">
+						© HORGA DARIUS 2020
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="script.js"></script>
+	</body>
+</html>

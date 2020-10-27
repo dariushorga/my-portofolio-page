@@ -1,0 +1,743 @@
+/*! GENERAL STUFF */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Oswald&display=swap");
+
+body {
+	font-family: "Lato", sans-serif;
+	transition: transform 0.5s ease;
+}
+
+body.light {
+	background-color: rgb(245, 245, 245);
+	color: #181818;
+}
+
+body.dark {
+	background-color: #181818;
+	color: rgb(245, 245, 245);
+}
+
+body.show-nav {
+	transform: translateX(160px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+.container-fluid {
+	padding: 0;
+	margin: 0;
+}
+
+/*! LOGO */
+#logo img {
+	width: 250px;
+	height: auto;
+}
+
+/* !SWITCH */
+.switch {
+	position: absolute;
+	right: 70px;
+	background-color: transparent;
+	border: none;
+	font-size: 30px;
+}
+
+button.switch {
+	color: rgb(245, 245, 245);
+}
+
+#switch-small {
+	color: #008f00;
+	border: 2px solid #008f00;
+	background-color: transparent;
+	border-radius: 5px;
+	font-size: 1.3rem;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: none;
+}
+
+/* !NAV - SMALL */
+nav#small-screen {
+	text-align: left;
+	background-color: #008f00;
+	border-right: 2px solid rgba(200, 200, 200, 0.1);
+	color: rgb(245, 245, 245);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 160px;
+	height: 100%;
+	z-index: 100;
+	transform: translateX(-100%);
+}
+
+nav#small-screen #profile-picture {
+	padding: 30px 0;
+	text-align: center;
+}
+
+nav#small-screen #profile-picture img {
+	height: auto;
+	width: 100px;
+	border-radius: 50%;
+}
+
+nav#small-screen ul {
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+}
+
+nav#small-screen ul li {
+	border-bottom: 2px solid rgba(245, 245, 245, 0.5);
+	padding: 20px 0;
+}
+
+nav#small-screen ul li:first-of-type {
+	border-top: 2px solid rgba(245, 245, 245, 0.5);
+}
+
+nav#small-screen ul li a {
+	font-size: 0.9rem;
+	color: rgb(245, 245, 245);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+nav#small-screen ul li a:link,
+nav#small-screen ul li a:visited {
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	margin: 0px 15px;
+	border-radius: 0;
+	padding: 2px;
+	color: rgb(245, 245, 245);
+	font-weight: 700;
+	transition: all 0.3s;
+}
+
+nav#small-screen ul li a:hover,
+nav#small-screen ul li a:active {
+	font-weight: 900;
+	border-bottom: 2px solid rgb(245, 245, 245);
+}
+
+/* !NAV - NORMAL */
+#nav-list {
+	margin-top: 1rem;
+	padding: 1rem;
+	font-size: 1.3rem;
+	background: #008f00;
+}
+
+#nav-list li a:link,
+#nav-list li a:visited {
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	margin: 0px 15px;
+	border-radius: 0;
+	padding: 2px;
+	color: rgb(245, 245, 245);
+	font-weight: 700;
+	transition: all 0.3s;
+}
+
+#nav-list li a:hover,
+#nav-list li a:active {
+	font-weight: 900;
+	border-bottom: 2px solid rgb(245, 245, 245);
+}
+
+/* !BANNER */
+section#banner h1 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+section#banner.light a:link,
+section#banner.light a:visited {
+	color: #181818;
+}
+
+section#banner.light a:hover,
+section#banner.light a:active {
+	color: #181818;
+	text-decoration: none;
+}
+
+section#banner.light #banner-main {
+	background-image: linear-gradient(
+			rgb(245, 245, 245),
+			rgba(215, 215, 215, 0.7)
+		),
+		url("img/bg-banner.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+section#banner.dark a:link,
+section#banner.dark a:visited {
+	color: rgb(245, 245, 245);
+}
+
+section#banner.dark a:hover,
+section#banner.dark a:active {
+	color: rgb(245, 245, 245);
+	text-decoration: none;
+}
+
+section#banner.dark #banner-main {
+	background-image: linear-gradient(#181818, #181818d3),
+		url("img/bg-banner.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#banner-pic img {
+	height: 350px;
+	width: auto;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	border-radius: 50%;
+	border: 2px solid #008f00;
+}
+
+#banner-info #name {
+	font-weight: 500;
+	font-size: 4rem;
+	color: #008f00;
+	transition: all 0.7s;
+}
+
+#banner #info-button {
+	background-color: #008f00;
+	padding: 0.8rem;
+	font-size: 1rem;
+	border: 2px solid #005000;
+	border-radius: 5px;
+}
+
+#banner #info-button:link,
+#banner #info-button:visited,
+.card-link:link,
+.card-link:visited {
+	color: rgb(245, 245, 245);
+	transition: all 0.5s;
+	font-weight: 700;
+}
+
+#banner #info-button:hover,
+#banner #info-button:active,
+.card-link:hover,
+.card-link:active {
+	background-color: #00aa00;
+}
+
+#banner-r-2 i {
+	transition: all 0.7s;
+	font-size: 4rem;
+}
+
+#banner-r-2 p {
+	font-weight: 700;
+}
+
+#banner-info #name:hover,
+#banner-r-2 i:hover,
+#skillsSection i.non-icon:hover {
+	color: #008f00;
+	transform: scale(1.05);
+}
+
+.toggle {
+	color: #008f00;
+	border: 2px solid #008f00;
+	background-color: transparent;
+	border-radius: 5px;
+	font-size: 1.3rem;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	display: none;
+}
+/* !SKILLS SECTION */
+
+#skills-banner,
+#education-banner,
+#about-banner,
+#projects-banner,
+#contact-banner {
+	padding-top: 10px;
+}
+
+.skill-type {
+	margin-top: 20px;
+}
+
+#skills-banner img,
+#about-banner img,
+#education-banner img,
+#projects-banner img,
+#contact-banner img {
+	height: 200px;
+	width: auto;
+}
+
+#skillsSection,
+#educationSection,
+#aboutSection,
+#projectsSection,
+#contactSection {
+	text-align: center;
+	padding: 40px;
+}
+
+#skillsSection.light,
+#educationSection.light,
+#aboutSection.light,
+#projectsSection.light,
+#contactSection.light {
+	background-color: rgb(230, 230, 230);
+}
+
+#skillsSection.dark,
+#educationSection.dark,
+#aboutSection.dark,
+#projectsSection.dark,
+#contactSection.dark {
+	background-color: #111111;
+}
+
+.skill-icon-p {
+	margin-top: 10px;
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+#skillsSection hr,
+#educationSection hr {
+	border-top: 2px solid #008f00;
+	width: 550px;
+}
+
+#skillsSection i {
+	font-size: 50px;
+	transition: all 0.5s;
+}
+
+#skillsSection i.non-icon {
+	font-size: 30px;
+}
+
+/* !PROJECTS SECTION */
+.card-title {
+	color: #008f00;
+	font-weight: 400;
+}
+
+.disclaimer span {
+	color: #008f00;
+	font-weight: 400;
+}
+
+.card-link {
+	background-color: #008f00;
+	border-radius: 5px;
+	padding: 0.7rem;
+}
+
+/* !ABOUT SECTION */
+#description p.lead {
+	font-size: 1.5rem;
+}
+
+/* !EDUCATION SECTION */
+#master {
+	margin-bottom: 2rem;
+}
+
+#bachelor {
+	margin-bottom: 1.5rem;
+}
+#education-banner {
+	padding-bottom: 1rem;
+}
+
+.ed-major {
+	font-size: 2.2rem;
+	font-weight: 400;
+	color: #008f00;
+}
+
+.start-date {
+	font-style: italic;
+	font-size: 1.3rem;
+	opacity: 0.6;
+}
+
+/* !FOOTER */
+#footerSection {
+	font-size: 1.5rem;
+	background-color: #008f00;
+	padding: 2rem 1rem;
+	color: rgb(245, 245, 245);
+}
+
+.footerLinks {
+	transition: all 0.7s;
+}
+
+.footerLinks:link,
+.footerLinks:visited {
+	color: rgb(245, 245, 245);
+}
+
+.footerLinks:hover,
+.footerLinks:active {
+	color: rgb(245, 245, 245);
+	text-decoration: none;
+	transform: scale(1.2);
+}
+
+footer #oc {
+	margin: 3rem 0rem 0rem 0rem;
+}
+
+/* !MEDIA QUERIES */
+@media (max-width: 1200px) {
+	.card-link {
+		display: block;
+		width: 100%;
+	}
+
+	.card-link:nth-of-type(odd) {
+		margin-bottom: 0.5rem !important;
+	}
+
+	.card-link:nth-of-type(even) {
+		margin-left: 0 !important;
+	}
+}
+
+@media (max-width: 992px) {
+	#banner h1 {
+		font-size: 1.7rem;
+	}
+
+	#banner-info #name {
+		font-size: 3.5rem;
+	}
+
+	#skills-banner h1,
+	#education-banner h1,
+	#about-banner h1,
+	#projects-banner h1,
+	#contact-banner h1 {
+		font-size: 2.5rem;
+	}
+
+	#skills-banner img,
+	#education-banner img,
+	#about-banner img,
+	#projects-banner img,
+	#contact-banner img {
+		height: 150px;
+	}
+
+	.skill-type {
+		font-size: 2rem;
+	}
+
+	#description p.lead {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 767px) {
+	h2 {
+		font-size: 2rem;
+	}
+
+	#banner-pic img {
+		display: none;
+	}
+
+	#banner-info {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	#banner-info h1 {
+		font-size: 2.1rem;
+	}
+
+	nav#normal-screen {
+		display: none;
+	}
+
+	#logo {
+		background-color: rgb(220, 220, 220);
+	}
+
+	#logo img {
+		width: 200px;
+	}
+
+	#switch-small {
+		display: block;
+	}
+
+	.toggle {
+		display: block;
+	}
+
+	#skills-banner img,
+	#education-banner img,
+	#about-banner img,
+	#projects-banner img,
+	#contact-banner img {
+		height: 120px;
+	}
+
+	#skillsSection hr,
+	#educationSection hr {
+		width: 425px;
+	}
+
+	#skillsSection i {
+		font-size: 45px;
+	}
+
+	#skillsSection i.non-icon {
+		font-size: 22px;
+	}
+
+	.footerLinks {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 615px) {
+	#banner-r-2 i {
+		font-size: 3rem;
+	}
+	#banner-r-2 p {
+		font-size: 1rem;
+	}
+
+	#skillsSection hr,
+	#educationSection hr {
+		width: 375px;
+	}
+
+	.ed-type {
+		font-size: 1.8rem;
+	}
+
+	.ed-major {
+		font-size: 2rem;
+	}
+
+	.start-date {
+		font-size: 1.1rem;
+	}
+
+	.uni,
+	.faculty {
+		font-size: 1.3rem;
+	}
+
+	#description p.lead {
+		font-size: 1.1rem;
+	}
+
+	#oc {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 580px) {
+	#skills-banner h1,
+	#education-banner h1,
+	#about-banner h1,
+	#projects-banner h1,
+	#contact-banner h1 {
+		font-size: 2rem;
+	}
+
+	.skill-type {
+		font-size: 1.7rem;
+		margin-top: 20px;
+	}
+
+	#skillsSection {
+		padding: 20px;
+	}
+
+	#skillsSection hr,
+	#educationSection hr {
+		width: 325px;
+	}
+
+	#banner-r-2 i {
+		padding: 0 !important;
+	}
+}
+
+@media (max-width: 450px) {
+	#banner #info-button {
+		padding: 0.5rem;
+		font-size: 0.8rem;
+	}
+
+	section#banner h1 {
+		font-size: 1.5rem;
+	}
+
+	#skills-banner img,
+	#education-banner img,
+	#about-banner img,
+	#projects-banner img,
+	#contact-banner img {
+		height: 100px;
+	}
+
+	#banner-info #name {
+		font-size: 3rem;
+	}
+
+	#banner-r-2 i {
+		font-size: 2.5rem;
+	}
+	#banner-r-2 p {
+		font-size: 0.9rem;
+	}
+
+	#description p.lead {
+		font-size: 1rem;
+	}
+
+	.ed-type {
+		font-size: 1.6rem;
+	}
+
+	.ed-major {
+		font-size: 1.8rem;
+	}
+
+	.start-date {
+		font-size: 1rem;
+	}
+
+	.uni,
+	.faculty {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.skill-type {
+		font-size: 1.5rem;
+	}
+
+	#skillsSection i {
+		font-size: 35px;
+	}
+
+	#skillsSection i.non-icon {
+		font-size: 18px;
+	}
+
+	#skillsSection hr,
+	#educationSection hr {
+		width: 275px;
+	}
+
+	#description p.lead {
+		font-size: 0.9rem;
+	}
+
+	.ed-type {
+		font-size: 1.4rem;
+	}
+
+	.ed-major {
+		font-size: 1.6rem;
+	}
+
+	.start-date {
+		font-size: 0.8rem;
+	}
+
+	.uni,
+	.faculty {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 375px) {
+	section#banner h1 {
+		font-size: 1.3rem;
+		margin-top: 1rem !important;
+		margin-bottom: 1.2rem !important;
+	}
+
+	#banner #info-button {
+		margin-top: 1rem;
+	}
+
+	#banner-info #name {
+		font-size: 2.5rem;
+	}
+
+	#banner-r-2 i {
+		font-size: 2.3rem;
+	}
+	#banner-r-2 p {
+		font-size: 0.9rem;
+	}
+
+	#skillsSection hr {
+		width: 225px;
+	}
+
+	#educationSection hr {
+		width: 150px;
+	}
+
+	.ed-type {
+		font-size: 1.2rem;
+	}
+
+	.ed-major {
+		font-size: 1.4rem;
+	}
+
+	.start-date {
+		font-size: 0.6rem;
+	}
+
+	.uni,
+	.faculty {
+		font-size: 0.9rem;
+	}
+}

@@ -473,6 +473,10 @@ footer #oc {
 }
 
 @media (max-width: 767px) {
+	#first-logo-banner {
+		display: none;
+	}
+
 	h2 {
 		font-size: 2rem;
 	}
